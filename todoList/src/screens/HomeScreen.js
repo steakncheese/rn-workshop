@@ -3,13 +3,8 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 const HomeScreen = () => {
   return (
-    <View style={styles.container}>
-      <TouchableOpacity
-      // onPress={() => navigation.navigate("LoginScreen")}
-      // style={[styles.button]}
-      >
-        <Text style={styles.buttonText}>Login</Text>
-      </TouchableOpacity>
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text>Home Screen</Text>
     </View>
   );
 };
