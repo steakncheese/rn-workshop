@@ -8,9 +8,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import Task from "./components/Task";
-// import { NavigationContainer } from "@react-navigation/native";
-// import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Task from "../components/Task";
 
 export default function App() {
   const [task, setTask] = useState();
