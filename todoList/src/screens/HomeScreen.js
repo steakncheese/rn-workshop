@@ -1,10 +1,34 @@
 import React from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View, Image } from "react-native";
+import chefGreg from "../img/chef-greg.png";
 
 const HomeScreen = () => {
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Home Screen</Text>
+    <View style={styles.containerHome}>
+      <Image
+        source={chefGreg}
+        resizeMode="cover"
+        style={{
+          width: 300,
+          height: 300,
+          borderColor: "#379540",
+          borderRadius: 30,
+          borderWidth: 10,
+          // borderStartWidth: 10,
+          marginTop: 60,
+          padding: 0,
+        }}
+      ></Image>
+      <View style={styles.parentView}>
+        <Text>
+          <Text style={{ fontWeight: "bold" }}>Chef Greg: </Text>
+          <Text>
+            I'm looking for a chef to join my crew and help create amazing meals
+            for our guests. No experience required in creating delicious dishes.
+            Just bring your creativity and flair to the table.
+          </Text>
+        </Text>
+      </View>
     </View>
   );
 };
@@ -12,10 +36,15 @@ const HomeScreen = () => {
 export default HomeScreen;
 
 const styles = StyleSheet.create({
-  container: {
+  parentView: {
+    width: "85%",
+    marginTop: 40,
+    marginHorizontal: 10,
+  },
+  containerHome: {
     flex: 1,
-    justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#D3FAD9",
   },
   button: {
     backgroundColor: "#0782F9",
