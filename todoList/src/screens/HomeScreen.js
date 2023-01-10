@@ -20,6 +20,7 @@ const HomeScreen = () => {
         }}
       ></Image>
       <View style={styles.parentView}>
+        <Text style={styles.titleHome}>Welcome Aboard Mate!</Text>
         <Text>
           <Text style={{ fontWeight: "bold" }}>Chef Greg: </Text>
           <Text>
@@ -29,6 +30,11 @@ const HomeScreen = () => {
           </Text>
         </Text>
       </View>
+      <View>
+        <TouchableOpacity style={[styles.button]}>
+          <Text style={styles.buttonText}>Get Started</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
@@ -36,6 +42,11 @@ const HomeScreen = () => {
 export default HomeScreen;
 
 const styles = StyleSheet.create({
+  titleHome: {
+    fontSize: 22,
+    fontWeight: "bold",
+    marginBottom: 2,
+  },
   parentView: {
     width: "85%",
     marginTop: 40,
@@ -47,12 +58,12 @@ const styles = StyleSheet.create({
     backgroundColor: "#D3FAD9",
   },
   button: {
-    backgroundColor: "#0782F9",
-    width: "60%",
-    padding: 15,
+    backgroundColor: "#379540",
+    width: 310,
+    padding: 10,
     borderRadius: 10,
     alignItems: "center",
-    marginTop: 40,
+    marginTop: 70,
   },
   buttonText: {
     color: "white",
