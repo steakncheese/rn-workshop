@@ -31,7 +31,10 @@ const HomeScreen = () => {
         </Text>
       </View>
       <View>
-        <TouchableOpacity style={[styles.button]}>
+        <TouchableOpacity
+          style={[styles.button]}
+          onPress={() => navigation.navigate("Detail")}
+        >
           <Text style={styles.buttonText}>Get Started</Text>
         </TouchableOpacity>
       </View>
